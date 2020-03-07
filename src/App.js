@@ -1,17 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {HashRouter} from 'react-router-dom'
+import routes from './routes'
 
-function App() {
-  return (
-    <div className="App">
-      <div className='text'>
-        <text>
-          Wolverine Firearms
-        </text>
-      </div>
-    </div>
-  );
+function App(){
+  return(
+  <HashRouter>
+    {routes}
+  </HashRouter>
+  )
+
 }
 
-export default App;
+export default App
